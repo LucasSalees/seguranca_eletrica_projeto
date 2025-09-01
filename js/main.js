@@ -126,13 +126,13 @@ function openModule(moduleName) {
                 window.location.href = 'pages/introducao.html';
                 break;
             case 'riscos':
-                window.location.href = 'pages/riscos.html';
+                window.location.href = '#';
                 break;
             case 'montagem':
-                window.location.href = 'pages/montagem.html';
+                window.location.href = '#';
                 break;
             case 'manutencao':
-                window.location.href = 'pages/manutencao.html';
+                window.location.href = '#';
                 break;
             default:
                 showNotification('Módulo em desenvolvimento', 'info');
