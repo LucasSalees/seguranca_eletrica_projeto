@@ -1,0 +1,468 @@
+/* Module-specific CSS */
+
+/* Module Header */
+.module-header {
+    background: var(--gradient-electric);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.module-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.module-icon-large {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.module-progress-header {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.module-progress-header .progress {
+    height: 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.module-progress-header .progress-bar {
+    background: var(--gradient-warning);
+    border-radius: 10px;
+}
+
+/* Content Sections */
+.module-content {
+    background: #f8f9fa;
+}
+
+.content-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.content-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 102, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--electric-blue);
+    display: flex;
+    align-items: center;
+}
+
+.content-body {
+    margin-bottom: 2rem;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    border: 1px solid #ffc107;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.highlight-box h4 {
+    color: #856404;
+    margin-bottom: 1rem;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.custom-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--safety-green);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
+/* Info Cards */
+.info-cards {
+    margin: 2rem 0;
+}
+
+.info-card {
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: var(--electric-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 102, 255, 0.1);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-card h5 {
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.stat-card:hover {
+    border-color: var(--electric-blue);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Concept Cards */
+.concept-cards {
+    margin: 2rem 0;
+}
+
+.concept-card {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.concept-card:hover {
+    background: white;
+    border-color: var(--electric-blue);
+    box-shadow: 0 5px 20px rgba(0, 102, 255, 0.1);
+}
+
+.concept-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-electric);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.concept-content h4 {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+.concept-content p {
+    margin: 0;
+    color: #6c757d;
+}
+
+/* Quiz Styles */
+.quiz-question {
+    display: none;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.quiz-question.active {
+    display: block;
+}
+
+.question-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+.quiz-options {
+    display: grid;
+    gap: 1rem;
+}
+
+.quiz-option {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.quiz-option:hover {
+    background: white;
+    border-color: var(--electric-blue);
+    transform: translateX(5px);
+}
+
+.quiz-option.correct {
+    background: #d4edda;
+    border-color: var(--safety-green);
+    color: #155724;
+}
+
+.quiz-option.wrong {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.quiz-option:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.quiz-score {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Section Actions */
+.section-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Module Navigation */
+.module-nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 0;
+}
+
+.nav-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e9ecef;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-dot.active {
+    background: var(--electric-blue);
+    transform: scale(1.2);
+}
+
+.nav-dot.completed {
+    background: var(--safety-green);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .module-header {
+        padding: 100px 0 60px;
+    }
+    
+    .module-icon-large {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+    
+    .content-card {
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section-title i {
+        margin-bottom: 0.5rem;
+    }
+    
+    .concept-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .concept-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .section-actions {
+        flex-direction: column;
+    }
+    
+    .section-actions .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-card {
+        padding: 1.5rem;
+    }
+    
+    .highlight-box {
+        padding: 1.5rem;
+    }
+    
+    .info-card {
+        padding: 1rem;
+    }
+    
+    .concept-card {
+        padding: 1rem;
+    }
+    
+    .quiz-option {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .module-nav {
+        padding: 0.8rem 0;
+    }
+    
+    .nav-indicators {
+        gap: 0.8rem;
+    }
+    
+    .nav-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .content-section,
+    .quiz-question,
+    .concept-card,
+    .info-card,
+    .stat-card,
+    .quiz-option {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .content-card {
+        border: 2px solid var(--dark-gray);
+    }
+    
+    .highlight-box {
+        border: 2px solid #ffc107;
+    }
+    
+    .quiz-option {
+        border: 2px solid var(--dark-gray);
+    }
+    
+    .nav-dot {
+        border: 2px solid var(--dark-gray);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .module-nav,
+    .section-actions {
+        display: none;
+    }
+    
+    .content-section {
+        display: block !important;
+        page-break-inside: avoid;
+    }
+    
+    .content-card {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
+
